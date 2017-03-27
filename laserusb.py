@@ -46,8 +46,7 @@ class LaserUSB(object):
         if None in self.bulk:
             raise RuntimeError("Could not find bulk endpoint")
 
-# when sending data, send the length data (16bit) over interupt line
-
+    # when sending data, send the length data (16bit) over interupt line
     def write(self, data):
         if len(data) >= 2**16:
             raise RuntimeError("Laserdata to big. max 16 bit")
