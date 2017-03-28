@@ -77,3 +77,11 @@ When pressing the stop button on the panel. It sends:
 .. code::
 
   ZZZFile0;ZQ;ZED
+
+
+Test blog
+^^^^^^^^^
+
+- Closing the application doesn't generate traffic on the laser.
+- Where does it save the orientation? on the usb dongle?
+- Change the "Move Speed0" (Properties->Advanced) to 14 changes "VQ15" -> "VQ14"
