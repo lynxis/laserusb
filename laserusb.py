@@ -66,6 +66,7 @@ class LaserUSB(object):
 
 class LaserControl(LaserUSB):
     cmd_stepping = "ZZZFile0;VP100;VK100;SP2;SP2;VQ15;VJ24;VS10;PR;PU%d,%d;ZED;"
+    cmd_stop = "ZZZFile0;ZQ;ZED"
     def _ensure_connected(self):
         if not self.connected:
             self.connect()
@@ -85,3 +86,7 @@ class LaserControl(LaserUSB):
     def right(self, steps=80):
         self._ensure_connected()
         self.write(self.cmd_stepping % (steps, 0))
+
+    def stop(self):
+        self._ensure_connected()
+        self.write(self.cmd_stop)
