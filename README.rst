@@ -28,7 +28,11 @@ Seen Commands
 SP0 - select pen (HPGL)
 DA0 - ?? activate laser?
 DW
-GZ
+GZ - Go Zero. Seems to reset the coordination for a particular PEN to this position.
+I *think* every pen has it's own coordination system. And every pen must initilize this to
+a decent 0,0 coordination. I *think* the hardware is only doing this for the default moving PEN.
+Meaning this must be called for every other pen by our self.
+I **would** recommend always setting it.
 
 PA - plot absolute (HPGL)
 PR - plot relative (HPGL)
