@@ -63,3 +63,25 @@ class LaserUSB(object):
             raise RuntimeError("Did not receive confirmation for sending HPGL data")
 
         self.bulk[1].write(data)
+
+class LaserControl(LaserUSB):
+    stepping = "ZZZFile0;VP100;VK100;SP2;SP2;VQ15;VJ24;VS10;PR;PU%d,%d;ZED;"
+    def _ensure_connected(self):
+        if not self.connected:
+            self.connect()
+
+    def up(self, steps=80):
+        self._ensure_connected()
+        self.write(self.stepping % (0, -steps))
+
+    def down(self, steps=80):
+        self._ensure_connected()
+        self.write(self.stepping % (0, steps))
+
+    def left(self, steps=80):
+        self._ensure_connected()
+        self.write(self.stepping % (-steps, 0))
+
+    def right(self, steps=80):
+        self._ensure_connected()
+        self.write(self.stepping % (steps, 0))
