@@ -30,6 +30,7 @@ DA0 - ?? activate laser?
 DW
 GZ
 
+PA - plot absolute (HPGL)
 PR - plot relative (HPGL)
 PD-1912,0 - pen down (HPGL)
 PU-1393,1360 - pen up (HPGL)
