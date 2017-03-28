@@ -11,16 +11,16 @@ Every command is like HPGL finished by a ';'
 
 Using the NewlyDraw as reference, **1** mm are **10** steps
 
-Open Questions
---------------
+Open and Answered Questions
+---------------------------
 
 * When got the laser activated?
-   Do I have to use SP0? 
-   or PD?
-   or DA0?
-   or all of them?
+   when using SP1 + PD it's activating the laser.
 
-* How to abort the process? - use the stop button
+* How to abort the process? - use the software stop button
+   Really dangerous, it's not direct responsive meaning the Laser cutter
+   will continue it's work until the command (or multiple?) are executed before
+   evaluating the command buffer.
 
 Seen Commands
 -------------
