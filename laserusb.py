@@ -9,6 +9,7 @@ ALLOC_TIMEOUT = 100
 class LaserUSB(object):
     def __init__(self):
         self.dev = None
+        self.connected = False
 
         # [input, output]
         self.interupt = [None, None]
@@ -45,6 +46,7 @@ class LaserUSB(object):
             raise RuntimeError("Could not find interupt endpoint")
         if None in self.bulk:
             raise RuntimeError("Could not find bulk endpoint")
+        self.connected = True
 
     # when sending data, send the length data (16bit) over interupt line
     def write(self, data):
