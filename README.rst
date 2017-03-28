@@ -1,6 +1,8 @@
 LaserUSB
 ========
 
+Based on Rabbit King Laser 40B (board V 8.1)
+
 Allow to replace the OEM software like NewlyDraw.
 This projects aim to allow to use a Rabbit 40B.
 
