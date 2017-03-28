@@ -1,3 +1,4 @@
+from usb import USBError
 import usb.core
 from usb.util import endpoint_address, endpoint_direction, ENDPOINT_IN, ENDPOINT_OUT
 import struct
