@@ -35,10 +35,10 @@ PR - plot relative (HPGL)
 PD-1912,0 - pen down (HPGL)
 PU-1393,1360 - pen up (HPGL)
 
-VJ24  - ?? velocity?
+VJ24  - acceleration (at least for move, when changing the acceleration it changes this value)
 VK100 - ?? velocity?
 VP100 - ?? velocity?
-VQ15  - ?? velocity?
+VQ15  - initial velocity (at least for move, but think it's also used by any other command)
 VS10  - ?? velocity?
 
 ZG1 - ??
