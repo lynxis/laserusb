@@ -39,6 +39,8 @@ PR - plot relative (HPGL)
 PD-1912,0 - pen down (HPGL)
 PU-1393,1360 - pen up (HPGL)
 
+UL - unlock the steppers. It seems there is no lock command. auto locking on next stepper involved command
+
 VJ24  - acceleration (at least for move, when changing the acceleration it changes this value)
 VK100 - ?? velocity?
 VP100 - ?? velocity?
