@@ -82,6 +82,13 @@ When pressing the stop button on the panel. It sends:
 
   ZZZFile0;ZQ;ZED
 
+Cut a line
+^^^^^^^^^^
+
+Engrave something.
+.. code::
+
+  ZZZFile0;VP100;VK100;SP1;VQ15;VJ24;VS10;SP1;GZ;PR;PD00,-800;ZED
 
 Test blog
 ^^^^^^^^^
