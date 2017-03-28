@@ -66,3 +66,13 @@ Use schwein.dxf as input.
 .. code::
 
   ZZZFile0;VP100;VK100;SP2;SP2;VQ15;VJ24;VS10;PR;PU-1912,0;PU0,1378;PU1912,0;PU0,-1378;ZED;
+
+
+Stop button
+^^^^^^^^^^^
+
+When pressing the stop button on the panel. It sends:
+
+.. code::
+
+  ZZZFile0;ZQ;ZED
