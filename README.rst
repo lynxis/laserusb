@@ -43,6 +43,7 @@ VS10  - ?? velocity?
 
 ZG1 - ??
 ZED - ends a file?
+ZQ - used by the stop command
 ZZZFile[0-9] - selects which file to work on
 
 Examples
