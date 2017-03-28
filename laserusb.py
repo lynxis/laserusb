@@ -24,7 +24,16 @@ class LaserUSB(object):
         if dev is None:
             raise ValueError('Device not found')
 
+        # FIXME:
+        # somehow its generating an usb error on my working machine
+        # does this device behave properly or is this a API violiotion?
+        # calling it a second time and everything is fine. No idea
+        try:
+            dev.set_configuration()
+        except USBError:
+            pass
         dev.set_configuration()
+
         self.dev = dev
         cfg = dev.get_active_configuration()
         intf = cfg[(0,0)]
