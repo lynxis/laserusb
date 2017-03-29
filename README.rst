@@ -25,32 +25,32 @@ Open and Answered Questions
 Seen Commands
 -------------
 
-SP0 - select pen (HPGL)
-DA0 - ?? activate laser?
-DW
-GZ - Go Zero. Seems to reset the coordination for a particular PEN to this position.
-I *think* every pen has it's own coordination system. And every pen must initilize this to
-a decent 0,0 coordination. I *think* the hardware is only doing this for the default moving PEN.
-Meaning this must be called for every other pen by our self.
-I **would** recommend always setting it.
+* SP0 - select pen (HPGL)
+* DA0 - ?? activate laser?
+* DW
+* GZ - Go Zero. Seems to reset the coordination for a particular PEN to this position.
+  I *think* every pen has it's own coordination system. And every pen must initilize this to
+  a decent 0,0 coordination. I *think* the hardware is only doing this for the default moving PEN.
+  Meaning this must be called for every other pen by our self.
+  I **would** recommend always setting it.
 
-PA - plot absolute (HPGL)
-PR - plot relative (HPGL)
-PD-1912,0 - pen down (HPGL)
-PU-1393,1360 - pen up (HPGL)
+* PA - plot absolute (HPGL)
+* PR - plot relative (HPGL)
+* PD-1912,0 - pen down (HPGL)
+* PU-1393,1360 - pen up (HPGL)
 
-UL - unlock the steppers. It seems there is no lock command. auto locking on next stepper involved command
+* UL - unlock the steppers. It seems there is no lock command. auto locking on next stepper involved command
 
-VJ24  - acceleration (at least for move, when changing the acceleration it changes this value)
-VK100 - ?? velocity?
-VP100 - ?? velocity?
-VQ15  - initial velocity (at least for move, but think it's also used by any other command)
-VS10  - ?? velocity?
+* VJ24  - acceleration (at least for move, when changing the acceleration it changes this value)
+* VK100 - ?? velocity?
+* VP100 - ?? velocity?
+* VQ15  - initial velocity (at least for move, but think it's also used by any other command)
+* VS10  - ?? velocity?
 
-ZG1 - ??
-ZED - ends a file?
-ZQ - used by the stop command
-ZZZFile[0-9] - selects which file to work on
+* ZG1 - ??
+* ZED - ends a file?
+* ZQ - used by the stop command
+* ZZZFile[0-9] - selects which file to work on
 
 Examples
 --------
